@@ -1,0 +1,16 @@
+#Distance Investigation Simulation
+
+# initialize the simulation
+/control/execute init.mac
+
+# disable saving tranjectory information
+/tracking/storeTrajectory 0
+
+# stop simulating events propagating backwards from detector
+/action/killBackwardToggle
+
+# create the lab bench
+/lab/benchOn
+
+# create the Si detector
+/lab/SiDetAndCasing 0 0 0 0
